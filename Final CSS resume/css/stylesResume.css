@@ -1,3 +1,49 @@
+/* Chosen palette 
+-------------------------
+5B507A -- kind of dark purple
+5B618A -- blue
+9EADC8 -- light blue
+B9E28C -- salad
+D6D84F -- greeny-yellow
+D65108 -- really orange
+*/
+/* For all Page
+-----------------------------*/
+
 body {
-	background:purple;
+	background: #5B507A;
+}
+
+a {
+	color:#D6D84F;
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+/* Header and Footer
+-----------------------------*/
+
+header, footer {
+	background: #5B618A;
+	color:#9EADC8;
+}
+
+header h1, header h2 {
+	color:#B9E28C;
+}
+
+/* Work Experience
+-----------------------------*/
+
+.workExperience {
+	background: #9EADC8;
+}
+
+/* Education
+-----------------------------*/
+
+.education {
+	background: #B9E28C;
 }
