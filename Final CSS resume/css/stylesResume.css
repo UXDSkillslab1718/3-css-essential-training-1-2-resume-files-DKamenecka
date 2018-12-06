@@ -6,13 +6,39 @@
 B9E28C -- salad
 D6D84F -- greeny-yellow
 D65108 -- really orange
+
+How to declare a font
+	@font-face {
+		font-family: "Museo Sans";
+		src: url(../fonts/museo-sans.ttf) format('woff');
+	}
+
+Fonts
+-------------------------
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
+font-family: 'Poppins', sans-serif;
+font-family: 'Playfair Display', serif;
 */
+
+
 /* For all Page
 -----------------------------*/
 
 body {
 	background: #5B507A;
+	font-family: 'Poppins', sans-serif;
 }
+h1, h2 {
+		font-family: 'Playfair Display', serif;
+		font-weight:400;
+	}
+h1 {
+	font-size: 80px;
+}
+h2 {
+	font-size: 40px;
+}
+
 
 a {
 	color:#D6D84F;
@@ -33,6 +59,11 @@ header, footer {
 header h1, header h2 {
 	color:#B9E28C;
 }
+header h2 {
+	font-style: italic;
+}
+
+
 
 /* Work Experience
 -----------------------------*/
@@ -41,9 +72,19 @@ header h1, header h2 {
 	background: #9EADC8;
 }
 
+.workExperience h2 {
+	text-decoration:underline;
+}
+
 /* Education
 -----------------------------*/
 
 .education {
 	background: #B9E28C;
 }
+
+.education h2 {
+	text-decoration:underline;
+}
+
+
