@@ -24,9 +24,16 @@ font-family: 'Playfair Display', serif;
 /* For all Page
 -----------------------------*/
 
+html {
+	box-sizing:border-box;
+}
+*, *:before, *:after {
+	box-sizing:inherit;
+}
+
 body {
-	background: #5B507A;
 	font-family: 'Poppins', sans-serif;
+	margin:0;
 }
 h1, h2 {
 		font-family: 'Playfair Display', serif;
@@ -37,6 +44,7 @@ h1 {
 }
 h2 {
 	font-size: 40px;
+	margin-top:0;
 }
 
 
@@ -47,6 +55,26 @@ a:hover {
 	text-decoration: none;
 }
 
+.content-wrap {
+	max-width: 800px;
+	margin:0 auto;
+	padding:50px;
+	color: #5B507A;
+}
+
+.col-narrow {
+	width: 30%;
+	min-height:175px;
+	float:left;
+
+}
+.col-wide {
+	width: 70%;
+	padding-left:20px;
+	min-height:175px;
+	float:left;
+}
+
 
 /* Header and Footer
 -----------------------------*/
@@ -55,13 +83,42 @@ header, footer {
 	background: #5B618A;
 	color:#9EADC8;
 }
+header, footer {
+	padding:50px;
+}
 
 header h1, header h2 {
 	color:#B9E28C;
+	margin:0;
 }
+
+/*Header*/
+
 header h2 {
 	font-style: italic;
 }
+.profile {
+	border-radius:10px;
+	height:250px; 
+	width:180px;
+	margin-left:100px;
+}
+header {
+	overflow:auto;
+}
+
+
+/*Footer*/
+
+footer {
+	text-align: center;
+}
+footer a{
+	margin:30px;
+	padding:30px;
+	display: inline-block;
+}
+
 
 
 
@@ -70,11 +127,14 @@ header h2 {
 
 .workExperience {
 	background: #9EADC8;
+	padding-bottom: 100px;
 }
 
 .workExperience h2 {
 	text-decoration:underline;
 }
+
+
 
 /* Education
 -----------------------------*/
