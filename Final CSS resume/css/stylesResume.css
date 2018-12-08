@@ -58,14 +58,14 @@ a:hover {
 .content-wrap {
 	max-width: 800px;
 	margin:0 auto;
-	padding:50px;
+	padding:60px 50px;
 	color: #5B507A;
+	overflow:auto;
 }
 
 .col-narrow {
 	width: 30%;
 	float:left;
-
 }
 .col-wide {
 	width: 70%;
@@ -81,6 +81,14 @@ h3 {
 	text-transform: uppercase;
 }
 
+.beautiful {
+	text-decoration:none;
+	background:#D65108;
+	color:white;
+	margin-left: 30px;
+	padding:10px;
+	display:inline-block;
+}
 
 /* Header and Footer
 -----------------------------*/
@@ -111,8 +119,35 @@ header h2 {
 }
 header {
 	overflow:auto;
+	padding-top:100px;
+	position:relative;
+}
+.download {
+	position:absolute;
+	bottom:0;
+	right:0;
+	border-radius:10px;
 }
 
+/*Navigation
+---------------------------*/
+
+nav {
+	text-align:center;
+	background:#5B507A;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+}
+
+nav a {
+	display:inline-block;
+	padding:15px 20px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+}
 
 /*Footer*/
 
@@ -133,7 +168,6 @@ footer a{
 
 .workExperience {
 	background: #9EADC8;
-	padding-bottom: 180px;
 }
 
 .workExperience h2 {
