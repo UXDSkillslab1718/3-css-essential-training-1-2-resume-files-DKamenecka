@@ -187,7 +187,10 @@ h ~ p {
 -----------------------------*/
 
 .education {
-	background: #B9E28C;
+	background: linear-gradient(rgba(185, 226, 140, 0.8),rgba(185, 226, 140, 0.5)),
+                 url(../Images/school.jpg) no-repeat fixed;
+				 background-size:cover;
+}
 }
 
 .education h2 {
